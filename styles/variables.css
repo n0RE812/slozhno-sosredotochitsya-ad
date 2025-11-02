@@ -1,4 +1,26 @@
 /*
   Переменные для вашего проекта
-  и их переопределение под различные устройства
+  и их переопределение под различных устройства
 */
+
+:root {
+  /* Цвета тёмной темы (основная) */
+  --accent-color: #ff0070;
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --card-bg: #ff0070;
+  --card-text: #000028;
+  --button-color: #ff0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --decor-color: #ff0070;
+  
+  /* Фоновые изображения */
+  --bg-image: url("../images/cover-image.png");
+  
+  /* Шрифты */
+  --main-font: "IBM Plex mono", monospace;
+  
+  /* Размеры */
+  --container-padding: 10px;
+}

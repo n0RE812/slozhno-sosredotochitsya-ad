@@ -1,40 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ru" class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__theme-menu">
+            <button class="header__theme-menu-button header__theme-menu-button_active" data-theme="dark">НЕОН</button>
+            <button class="header__theme-menu-button" data-theme="auto">АВТО</button>
+            <button class="header__theme-menu-button" data-theme="light">ДЕНЬ</button>
+        </div>
+        
+        <div class="header__decor">
+            <span class="header__decor-rec" aria-hidden="true">REC</span>
+        </div>
+        
+        <h1 class="header__title">no focus</h1>
+        
+        <div class="header__content">
+            <p class="header__text title-decor">
+                Что делать, когда не можешь делать ничего<br>
+                Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+            </p>
+        </div>
     </header>
-  </body>
+
+    <main class="main">
+        <section class="content-section">
+            <h2 class="content-section__title title-decor">Почему сосредоточиться так сложно</h2>
+            
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3 class="content-card__title title-decor">Сущность</h3>
+                    <div class="content-card__text">
+                        <p>Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (или всем начинающим менеджерам этого мира)? А дело в том, что её просто не существует.</p>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <h3 class="content-card__title title-decor">Что снижает концентрацию внимания?</h3>
+                    <div class="content-card__text">
+                        <p>Как концентрация может снижаться из-за... концентрации? Любая стрессовая ситуация (или резко меняющийся мир в целом) заставляет наш мозг постоянно «сканировать» окружающую среду на предмет опасности.</p>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <h3 class="content-card__title title-decor">Как концентрироваться лучше, чем золотая рыбка</h3>
+                    <div class="content-card__text">
+                        <p>Представьте небо и облака. Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="gallery-title title-decor">Галерея методов</h2>
+              <div class="gallery-grid">
+        <img src="./images/books.png" alt="Книги для концентрации" class="gallery-image" loading="lazy">
+        <img src="./images/sunset.png" alt="Медитация и отдых" class="gallery-image" loading="lazy">
+        <img src="./images/cover-image.png" alt="Фоновая картинка" class="gallery-image" loading="lazy">
+        <img src="./images/books.png" alt="Дополнительная книга" class="gallery-image" loading="lazy">
+        <img src="./images/sunset.png" alt="Дополнительный закат" class="gallery-image" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__title">no focus</h2>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
 </html>
