@@ -1,18 +1,21 @@
 :root {
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --subtitle-bg: #ff0070;
-  --subtitle-color: #000028;
+  --bg-color: #000028;       
+  --text-color: #f1b2ce;          
+  --accent-color: #ff0070;         
+  --title-color: #db00ff;         
+  --subtitle-bg: #ff0070;          
+  --subtitle-color: #000028;        
   --bg-image: url('../images/cover-image-dark.png');
   --button-hover: rgba(255, 0, 112, 0.4);
   --decorative-color: #ff0070;
   --container-max: 1024px;
-  --gap-s: 10px;
+  --gap-xxs: 5px;
+  --gap-xs: 10px;
+  --gap-s: 16px;
   --gap-m: 20px;
   --gap-l: 40px;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
