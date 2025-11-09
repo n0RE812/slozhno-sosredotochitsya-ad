@@ -1,13 +1,16 @@
-/* Глобальные стили и декоративные уголки */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   block-size: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 body.page {
@@ -25,7 +28,10 @@ body.page {
   color: var(--text-color);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
