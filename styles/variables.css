@@ -1,4 +1,27 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/* Переменные для ТЁМНОЙ темы (основной) */
+
+:root {
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --subtitle-bg: #ff0070;
+  --subtitle-color: #000028;
+  --bg-image: url('../images/cover-image-dark.png');
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --decorative-color: #ff0070;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url('../images/cover-image-light.png');
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc8e8;
+    --subtitle-bg: #ff8dcb;
+    --subtitle-color: #353430;
+    --button-hover: rgba(50, 49, 45, 0.4);
+    --decorative-color: #ff8dcb;
+  }
+}
