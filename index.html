@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru" class="theme-auto">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
   <title>Сложно сосредоточиться</title>
 
+  <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles/globals.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/dark.css" />
-  <link rel="stylesheet" href="./styles/light.css" />
+  <!-- Стили -->
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/dark.css">
+  <link rel="stylesheet" href="./styles/light.css">
 
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body class="page">
-  <header class="header decorated-zone" aria-label="Шапка сайта">
+  <header class="header decorated-zone">
     <nav class="header__theme-menu" aria-label="Переключение темы">
       <ul class="header__theme-menu-list">
         <li><button class="header__theme-menu-button header__theme-menu-button_type_light">День</button></li>
-        <li><button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>Авто</button></li>
+        <li><button class="header__theme-menu-button header__theme-menu-button_type_auto header__theme-menu-button_active" disabled>Авто</button></li>
         <li><button class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button></li>
       </ul>
     </nav>
-
     <div class="header__rec" aria-hidden="true">REC</div>
     <h1 class="header__title">no focus</h1>
-
-    <div class="header__description title-decor">
-      <p>Что делать, когда не можешь делать ничего,<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
-    </div>
+    <p class="header__description title-decor">
+      Что делать, когда не можешь делать ничего,<br>
+      или почему нам так сложно сконцентрироваться, особенно когда очень надо
+    </p>
   </header>
 
   <main class="content">
+    <section class="content__section">
+      <h2 class="content__title">Почему сосредоточиться так сложно</h2>
+      <article class="content__item">
+        <h3 class="content__subtitle title-decor">Многозадачность</h3>
+        <p>Мозгу тяжело концентрироваться даже на двух делах одновременно...</p>
+      </article>
+      <article class="content__item">
+        <h3 class="content__subtitle title-decor">Дофамин</h3>
+        <p>Мы часто отвлекаемся на соцсети, получаем дофамин и замыкаем круг...</p>
+      </article>
+    </section>
+
     <section class="gallery" aria-label="Галерея">
-      <img class="gallery__item" src="./images/sunset.png" alt="Закат в горах" loading="lazy" />
-      <img class="gallery__item" src="./images/ice-cream.png" alt="Мороженое в рожке" loading="lazy" />
-      <img class="gallery__item" src="./images/tape.png" alt="Аудиокассета" loading="lazy" />
-      <img class="gallery__item" src="./images/books.png" alt="Книги на полке" loading="lazy" />
-      <img class="gallery__item" src="./images/street.png" alt="Улица с фонарями" loading="lazy" />
+      <img src="./images/sunset.png" alt="Закат в горах" loading="lazy" class="gallery__item">
+      <img src="./images/ice-cream.png" alt="Мороженое" loading="lazy" class="gallery__item">
+      <img src="./images/tape.png" alt="Кассета" loading="lazy" class="gallery__item">
+      <img src="./images/books.png" alt="Книги" loading="lazy" class="gallery__item">
+      <img src="./images/street.png" alt="Улица" loading="lazy" class="gallery__item">
     </section>
   </main>
 
-  <footer class="footer decorated-zone" aria-label="Подвал сайта">
+  <footer class="footer decorated-zone">
     <h2 class="footer__title">focus</h2>
   </footer>
 
