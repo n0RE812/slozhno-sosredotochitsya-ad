@@ -2,45 +2,45 @@
 <html lang="ru" class="theme-auto">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
   <title>Сложно сосредоточиться</title>
-  
+
+  <!-- Шрифты первыми -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-  
+
+  <!-- Стили: от общих к частным -->
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/variables.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/dark.css" />
   <link rel="stylesheet" href="./styles/light.css" />
-  
+
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body class="page">
-  
-  <header class="header decorated-zone">
-    <nav class="header__theme-menu">
+  <header class="header decorated-zone" aria-label="Шапка сайта">
+    <nav class="header__theme-menu" aria-label="Переключение темы">
       <ul class="header__theme-menu-list">
         <li><button class="header__theme-menu-button header__theme-menu-button_type_light">День</button></li>
         <li><button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>Авто</button></li>
         <li><button class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button></li>
       </ul>
     </nav>
-    
+
     <div class="header__rec" aria-hidden="true">REC</div>
     <h1 class="header__title">no focus</h1>
-    
-    <div class="header__description title-decor">
+
+    <div class="header__description title-decor" role="note">
       <p>Что делать, когда не можешь делать ничего,<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
     </div>
   </header>
 
   <main class="content">
-    
-    <section class="content__section">
-      <h2 class="content__title">Почему сосредоточиться так сложно</h2>
+    <section class="content__section" aria-labelledby="why-hard">
+      <h2 id="why-hard" class="content__title">Почему сосредоточиться так сложно</h2>
       <div class="content__list">
         <article class="content__item">
           <h3 class="content__subtitle title-decor">Многозадачность</h3>
@@ -57,9 +57,8 @@
       </div>
     </section>
 
-
-    <section class="content__section">
-      <h2 class="content__title">Что снижает концентрацию внимания?</h2>
+    <section class="content__section" aria-labelledby="what-lowers">
+      <h2 id="what-lowers" class="content__title">Что снижает концентрацию внимания?</h2>
       <div class="content__list">
         <article class="content__item">
           <h3 class="content__subtitle title-decor">Многозадачность</h3>
@@ -82,8 +81,8 @@
       </div>
     </section>
 
-    <section class="content__section">
-      <h2 class="content__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
+    <section class="content__section" aria-labelledby="how-focus">
+      <h2 id="how-focus" class="content__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
       <div class="content__list">
         <article class="content__item">
           <h3 class="content__subtitle title-decor">5 простых (на самом деле не очень) советов</h3>
@@ -119,8 +118,7 @@
       </div>
     </section>
 
-
-    <section class="gallery">
+    <section class="gallery" aria-label="Галерея">
       <img class="gallery__item" src="./images/sunset.png" alt="Закат в горах" loading="lazy" />
       <img class="gallery__item" src="./images/ice-cream.png" alt="Мороженое в рожке" loading="lazy" />
       <img class="gallery__item" src="./images/tape.png" alt="Аудиокассета" loading="lazy" />
@@ -129,7 +127,7 @@
     </section>
   </main>
 
-  <footer class="footer decorated-zone">
+  <footer class="footer decorated-zone" aria-label="Подвал сайта">
     <h2 class="footer__title">focus</h2>
   </footer>
 
