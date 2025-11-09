@@ -8,6 +8,10 @@
   --bg-image: url('../images/cover-image-dark.png');
   --button-hover: rgba(255, 0, 112, 0.4);
   --decorative-color: #ff0070;
+  --container-max: 1024px;
+  --gap-s: 10px;
+  --gap-m: 20px;
+  --gap-l: 40px;
 }
 
 @media (prefers-color-scheme: light) {
