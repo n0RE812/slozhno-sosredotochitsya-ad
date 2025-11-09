@@ -37,6 +37,8 @@ function setActiveButton(buttonsArray, theme) {
     button.removeAttribute('disabled');
   });
   const target = buttonsArray.find((button) =>
+    button.classList.contains(`header__theme-menu_button_type_${theme}`)
+  ) || buttonsArray.find((button) =>
     button.classList.contains(`header__theme-menu-button_type_${theme}`)
   );
   if (target) {
@@ -46,7 +48,9 @@ function setActiveButton(buttonsArray, theme) {
     const autoButton = document.querySelector(
       '.header__theme-menu-button_type_auto'
     );
-    autoButton.classList.add('header__theme-menu-button_active');
-    autoButton.setAttribute('disabled', true);
+    if (autoButton) {
+      autoButton.classList.add('header__theme-menu-button_active');
+      autoButton.setAttribute('disabled', true);
+    }
   }
 }
